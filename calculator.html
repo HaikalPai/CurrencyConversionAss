@@ -1,0 +1,57 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Conversion Calculator</title>
+</head>
+
+<body style="background-color: rgb(14, 129, 230);">
+    <header>
+        <h1><img src="Pic/patrickblow.gif" alt="Coin" style="width: 300px; height: 300px;" Align="center"> Conversion Calculator </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><img src="Pic/Coins2.gif" alt="Coin" style="width: 50px; height: 50px;" Align="center"><a href="index.html" style="background-color: rgb(6, 88, 143);"> [ Home ]</a></li>
+            <li><img src="Pic/Coins2.gif" alt="Coin" style="width: 50px; height: 50px;" Align="center"><a href="conversion.html" style="background-color: rgb(6, 88, 143);"> [ About Currency Conversion ]</a></li>
+            <li><img src="Pic/Coins2.gif" alt="Coin" style="width: 50px; height: 50px;" Align="center"><a href="calculator.html" style="background-color: rgb(6, 88, 143);"> [ Calculator ]</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Currency Conversion <img src="Pic/observe.gif" alt="Coin" style="width: 200px; height: 200px;" Align="center"> </h2>
+            <p>Convert from:</p>
+            <select id="fromCurrency" style="font-size: 75px;">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="gbp">GBP</option>
+                <option value="jpy">JPY</option>
+                <!-- Add more currency options as needed -->
+            </select>
+
+            <p>Convert to:</p>
+            <select id="toCurrency" style="font-size: 75px;">
+                <option value="myr">MYR</option>
+                <option value="aud">AUD</option>
+                <option value="cad">CAD</option>
+                <option value="inr">INR</option>
+                <!-- Add more currency options as needed -->
+            </select>
+
+            <p>Enter amount:</p>
+            <label for="amountInput">Amount:</label>
+            <input type="text" id="amountInput" placeholder="Enter amount">
+
+            <button onclick="performCurrencyConversion()">Convert</button>
+            <button onclick="resetForm()">Reset</button>
+            <div id="conversionResult"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 MUHAMMAD HAIKAL BIN MOHD ZULKIFLI. All rights reserved.</p>
+    </footer>

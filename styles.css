@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header, nav, main, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #07408a;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+    color: #1398af;
+}
+
+section {
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #ece7e7;
+}
+
+input[type="text"] {
+    padding: 8px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    width: 50%;
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#conversionResult, #measurementResult, #charResult {
+    height: 40px;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #0a81f0;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
